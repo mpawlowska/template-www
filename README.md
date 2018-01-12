@@ -1,5 +1,5 @@
-## Template responsywnej strony www
+## Podstawowy szablon uruchomienia projektu
 
-Wykorzystane narzędzia: 
-* React,
-* React-router
+* uwzględnia potencjalne hostowanie na gh-pages
+* uruchomienie: npm start
+* budowanie: npm run build
