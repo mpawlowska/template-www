@@ -1,5 +1,3 @@
-## Podstawowy szablon uruchomienia projektu
+## Template responsywnej strony www
 
-* uwzględnia potencjalne hostowanie na gh-pages
-* uruchomienie: npm start
-* budowanie: npm run build
+* Narzędzia: m.in. React, React-route
