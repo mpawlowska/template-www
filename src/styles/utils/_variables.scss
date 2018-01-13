@@ -1,0 +1,14 @@
+// fonts:
+$base-font-family: 'Merriweather', serif;
+
+// layout:
+$base-flex: flex;
+$border: 1px dotted green;
+
+// focus:
+%focus {
+  outline: none;
+  &:focus {
+    border: 2px solid #ed145b;
+  }
+}
