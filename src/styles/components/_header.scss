@@ -1,7 +1,11 @@
-.mainHeader, .subHeader {
+.mainHeader {
   display: flex;
   justify-content: space-between;
   border: $border;
+}
+
+.subHeader {
+ text-align: center;
 }
 
 /*

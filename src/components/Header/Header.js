@@ -5,7 +5,7 @@ import { Route, Switch } from "react-router-dom";
 const Header = (props) => {
     return (
         <header>
-            <div className="wrapper">
+            <div>
                 <div className="mainHeader">
                     <button className="mainHeader__searchButton">Search</button>
 

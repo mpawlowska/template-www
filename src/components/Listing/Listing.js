@@ -9,9 +9,49 @@ export default class Listing extends React.Component {
 
     render() {
         return (
-            <div>
-
+            <div className="image-container">
+                <div className="image-box">
+                </div>
+                <div className="image-box">
+                </div>
+                <div className="image-box">
+                </div>
+                <div className="image-box">
+                </div>
+                <div className="image-box">
+                </div>
+                <div className="image-box">
+                </div>
+                <div className="image-box">
+                </div>
+                <div className="image-box">
+                </div>
+                <div className="image-box">
+                </div>
+                <div className="image-box">
+                </div>
+                <div className="image-box">
+                </div>
+                <div className="image-box">
+                </div>
+                <div className="image-box">
+                </div>
+                <div className="image-box">
+                </div>
+                <div className="image-box">
+                </div>
+                <div className="image-box">
+                </div>
+                <div className="image-box">
+                </div>
+                <div className="image-box">
+                </div>
+                <div className="image-box">
+                </div>
+                <div className="image-box">
+                </div>
             </div>
+
         )
     }
 }

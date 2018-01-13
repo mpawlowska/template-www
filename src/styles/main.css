@@ -19,8 +19,10 @@ aside.primary {
 }
  */
 .wrapper {
+  border: 1px dotted grey;
   max-width: 100%;
-  border: 1px solid red; }
+  margin: 0 auto;
+  padding: 0 10px; }
   @media screen and (min-width: 767px) {
     .wrapper {
       max-width: 90%; } }
@@ -33,10 +35,16 @@ body {
   width: 100vw;
   height: 100vh; }
 
-.mainHeader, .subHeader {
+img {
+  max-width: 100%; }
+
+.mainHeader {
   display: flex;
   justify-content: space-between;
-  border: 1px dotted green; }
+  border: 1px dotted red; }
+
+.subHeader {
+  text-align: center; }
 
 /*
 $main-navigation-green-background-color: rgb(135, 211, 124);
@@ -80,5 +88,16 @@ $main-navigation-blue-background-color: rgb(34, 167, 240);
   }
 }
 */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: space-between; }
+
+.image-box {
+  border: 1px solid blue;
+  margin-top: 1em;
+  min-width: 200px;
+  min-height: 200px; }
 
 /*# sourceMappingURL=main.css.map */

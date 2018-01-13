@@ -1,6 +1,16 @@
+@mixin grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+
+
 .wrapper {
+  border: 1px dotted grey;
   max-width: 100%;
-  border: 1px solid red;
+  margin: 0 auto;
+  padding: 0 10px;
+
   @include media(sm) {
     max-width: 90%;
   }
@@ -8,3 +18,5 @@
     max-width:  80%;
   }
 }
+
+
