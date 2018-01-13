@@ -1,4 +1,7 @@
 @import './utils/variables';
+@import './utils/mediaMixin';
+
+@import './layout/layout';
 
 @import './components/app';
 @import './components/header';

@@ -8,7 +8,7 @@ import '../../styles/main.scss';
 
 const App = (props) => {
     return (
-        <div>
+        <div className="wrapper">
             <Header />
             <Listing />
         </div>

@@ -7,15 +7,11 @@ const Header = (props) => {
         <header>
             <div className="wrapper">
                 <div className="mainHeader">
-                    <button className="mainHeader__searchButton">
-
-                    </button>
+                    <button className="mainHeader__searchButton">Search</button>
 
                     <h1>Tytuł</h1>
 
-                    <button className="mainHeader__menuButton">
-
-                    </button>
+                    <button className="mainHeader__menuButton">Menu</button>
                 </div>
 
                 <div className="subHeader">

@@ -1,3 +1,3 @@
 ## Template responsywnej strony www
 
-* Narzędzia: m.in. React, React-route
+* Narzędzia: m.in. React, React-router, Sass.

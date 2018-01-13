@@ -1,8 +1,41 @@
+/*
+aside.primary {
+  float: right;
+  width: 350px;
+  @include media(sm) {
+    float: none;
+    width: 100%;
+  }
+}
+
+.grid-1-4 {
+  width: 100%;
+  @include media(sm) {
+    width: 50%;
+  }
+  @include breakpoint(md) {
+    width: 25%;
+  }
+}
+ */
+.wrapper {
+  max-width: 100%;
+  border: 1px solid red; }
+  @media screen and (min-width: 767px) {
+    .wrapper {
+      max-width: 90%; } }
+  @media screen and (min-width: 992px) {
+    .wrapper {
+      max-width: 80%; } }
+
 body {
-  font-family: "Merriweather", serif; }
+  font-family: "Merriweather", serif;
+  width: 100vw;
+  height: 100vh; }
 
 .mainHeader, .subHeader {
   display: flex;
+  justify-content: space-between;
   border: 1px dotted green; }
 
 /*
