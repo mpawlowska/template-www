@@ -1,15 +1,14 @@
-.image-container {
+.list {
+  background-color: antiquewhite;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.image-box {
+.list__card {
   border: 1px solid blue;
-  margin-top: 1em;
+  margin: 1em;
   min-width: 200px;
   min-height: 200px;
-
 }
 

@@ -9,49 +9,50 @@ export default class Listing extends React.Component {
 
     render() {
         return (
-            <div className="image-container">
-                <div className="image-box">
+            <main className="wrapper">
+                <div className="list">
+                    <div className="list__card">
+                    </div>
+                    <div className="list__card">
+                    </div>
+                    <div className="list__card">
+                    </div>
+                    <div className="list__card">
+                    </div>
+                    <div className="list__card">
+                    </div>
+                    <div className="list__card">
+                    </div>
+                    <div className="list__card">
+                    </div>
+                    <div className="list__card">
+                    </div>
+                    <div className="list__card">
+                    </div>
+                    <div className="list__card">
+                    </div>
+                    <div className="list__card">
+                    </div>
+                    <div className="list__card">
+                    </div>
+                    <div className="list__card">
+                    </div>
+                    <div className="list__card">
+                    </div>
+                    <div className="list__card">
+                    </div>
+                    <div className="list__card">
+                    </div>
+                    <div className="list__card">
+                    </div>
+                    <div className="list__card">
+                    </div>
+                    <div className="list__card">
+                    </div>
+                    <div className="list__card">
+                    </div>
                 </div>
-                <div className="image-box">
-                </div>
-                <div className="image-box">
-                </div>
-                <div className="image-box">
-                </div>
-                <div className="image-box">
-                </div>
-                <div className="image-box">
-                </div>
-                <div className="image-box">
-                </div>
-                <div className="image-box">
-                </div>
-                <div className="image-box">
-                </div>
-                <div className="image-box">
-                </div>
-                <div className="image-box">
-                </div>
-                <div className="image-box">
-                </div>
-                <div className="image-box">
-                </div>
-                <div className="image-box">
-                </div>
-                <div className="image-box">
-                </div>
-                <div className="image-box">
-                </div>
-                <div className="image-box">
-                </div>
-                <div className="image-box">
-                </div>
-                <div className="image-box">
-                </div>
-                <div className="image-box">
-                </div>
-            </div>
-
+            </main>
         )
     }
 }

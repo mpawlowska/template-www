@@ -4,18 +4,16 @@ import { Route, Switch } from "react-router-dom";
 
 const Header = (props) => {
     return (
-        <header>
-            <div>
-                <div className="mainHeader">
-                    <button className="mainHeader__searchButton">Search</button>
-
+        <header className="header">
+            <div className="wrapper">
+                <div className="header__main">
+                    <button className="header__search">Search</button>
                     <h1>Tytuł</h1>
-
-                    <button className="mainHeader__menuButton">Menu</button>
+                    <button className="header__menuB">Menu</button>
                 </div>
 
-                <div className="subHeader">
-                    Podtytuł
+                <div className="header_sub">
+                    <h3>Podtytuł</h3>
                 </div>
             </div>
         </header>
