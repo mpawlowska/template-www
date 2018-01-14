@@ -1,0 +1,63 @@
+.nav {
+  display: flex;
+  align-items: center;
+  height: 15em;
+  width: 10em;
+  top: 40px;
+  background-color: #333333;
+  opacity: 0.8;
+  position: fixed;
+}
+
+.hidden {
+  display: none;
+}
+
+.hide {
+  right: 0;
+  -webkit-animation: slide-out 1s forwards;
+  animation: slide-out 1s forwards;
+}
+@-webkit-keyframes slide-out {
+  100% { right: -10em }
+}
+@keyframes slide-out {
+  100% { right: -10em }
+}
+
+
+.show {
+  right: -10em;
+  -webkit-animation: slide-in 1s forwards;
+  animation: slide-in 1s forwards;
+}
+@-webkit-keyframes slide-in {
+  100% { right: 0 }
+}
+@keyframes slide-in {
+  100% { right: 0 }
+}
+
+
+.nav__box {
+  background-color: blue;
+  height: 80%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.nav__list {
+  background-color: white;
+  text-align: center;
+}
+
+.nav__item {
+  padding: 1em;
+}
+
+
+
+
+

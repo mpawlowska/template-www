@@ -29,28 +29,6 @@ export default class Listing extends React.Component {
                     </div>
                     <div className="list__card">
                     </div>
-                    <div className="list__card">
-                    </div>
-                    <div className="list__card">
-                    </div>
-                    <div className="list__card">
-                    </div>
-                    <div className="list__card">
-                    </div>
-                    <div className="list__card">
-                    </div>
-                    <div className="list__card">
-                    </div>
-                    <div className="list__card">
-                    </div>
-                    <div className="list__card">
-                    </div>
-                    <div className="list__card">
-                    </div>
-                    <div className="list__card">
-                    </div>
-                    <div className="list__card">
-                    </div>
                 </div>
             </main>
         )
