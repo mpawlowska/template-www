@@ -3,15 +3,24 @@
 }
 
 .header__main {
+  background-color: #ed145b;
   display: flex;
   justify-content: space-between;
-  border: $border;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  padding: 0 0.5em;
 }
 
 .header_sub {
+  background-color: aqua;
   text-align: center;
   display: none;
   @include media(sm) {
     display: block;
+    height: 30px;
   }
 }

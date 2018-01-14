@@ -19,13 +19,13 @@ aside.primary {
 }
  */
 body {
-  font-family: "Merriweather", serif; }
+  font-family: "Merriweather", serif;
+  margin-top: 40px; }
 
 img {
   max-width: 100%; }
 
 .wrapper {
-  border: 1px dotted grey;
   max-width: 100%;
   margin: 0 auto;
   padding: 0 0.5em; }
@@ -37,16 +37,25 @@ img {
   background-color: darkgrey; }
 
 .header__main {
+  background-color: #ed145b;
   display: flex;
   justify-content: space-between;
-  border: 1px dotted red; }
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  padding: 0 0.5em; }
 
 .header_sub {
+  background-color: aqua;
   text-align: center;
   display: none; }
   @media screen and (min-width: 767px) {
     .header_sub {
-      display: block; } }
+      display: block;
+      height: 30px; } }
 
 .list {
   background-color: antiquewhite;

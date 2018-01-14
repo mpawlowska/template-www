@@ -11,7 +11,6 @@ const Header = (props) => {
                     <h1>Tytuł</h1>
                     <button className="header__menuB">Menu</button>
                 </div>
-
                 <div className="header_sub">
                     <h3>Podtytuł</h3>
                 </div>
