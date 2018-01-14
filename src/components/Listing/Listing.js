@@ -4,12 +4,11 @@ import { Route, Switch } from "react-router-dom";
 export default class Listing extends React.Component {
     constructor(props) {
         super(props);
-
     }
 
     render() {
         return (
-            <div className="image-container">
+            <main className="listing">
                 <div className="image-box">
                 </div>
                 <div className="image-box">
@@ -50,7 +49,7 @@ export default class Listing extends React.Component {
                 </div>
                 <div className="image-box">
                 </div>
-            </div>
+            </main>
 
         )
     }

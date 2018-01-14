@@ -18,81 +18,42 @@ aside.primary {
   }
 }
  */
-.wrapper {
-  border: 1px dotted grey;
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 10px; }
-  @media screen and (min-width: 767px) {
-    .wrapper {
-      max-width: 90%; } }
-  @media screen and (min-width: 992px) {
-    .wrapper {
-      max-width: 80%; } }
+.main-container {
+  display: grid;
+  grid-template-columns: auto 90% auto;
+  grid-template-rows: 15% auto;
+  grid-template-areas: "header header header" ". listing ."; }
 
 body {
-  font-family: "Merriweather", serif;
-  width: 100vw;
-  height: 100vh; }
+  font-family: "Merriweather", serif; }
 
 img {
   max-width: 100%; }
 
-.mainHeader {
+.header {
+  grid-area: header;
+  background-color: darkgrey;
+  padding: 0 1em; }
+
+.header__main {
   display: flex;
   justify-content: space-between;
   border: 1px dotted red; }
 
-.subHeader {
-  text-align: center; }
+.header__sub {
+  text-align: center;
+  border: 1px dotted red;
+  display: none; }
+  @media screen and (min-width: 767px) {
+    .header__sub {
+      display: block; } }
 
-/*
-$main-navigation-green-background-color: rgb(135, 211, 124);
-$main-navigation-blue-background-color: rgb(34, 167, 240);
-
-.main-navigation--green {
-  background-color: $main-navigation-green-background-color;
-}
-
-.main-navigation--blue {
-  background-color: $main-navigation-blue-background-color;
-}
-
-.main-navigation__item {
-  display: inline-block;
-  position: relative;
-  text-decoration: none;
-  font-weight: 600;
-  margin: 10px 16px;
-  color: #333;
-
-  &.active {
-    color: white;
-
-    &:before {
-      content: '';
-      position: absolute;
-      bottom: -20px;
-      left: 50%;
-      transform: translateX(-50%);
-      border: 5px solid transparent;
-      border-left-width: 10px;
-      border-right-width: 10px;
-      .main-navigation--green & {
-        border-top-color: $main-navigation-green-background-color;
-      }
-      .main-navigation--blue & {
-        border-top-color: $main-navigation-blue-background-color;
-      }
-    }
-  }
-}
-*/
-.image-container {
+.listing {
+  grid-area: listing;
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  justify-content: space-between; }
+  justify-content: center; }
 
 .image-box {
   border: 1px solid blue;
