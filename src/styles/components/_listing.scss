@@ -3,6 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
 }
 
 .list__card {
@@ -12,3 +13,26 @@
   min-height: 200px;
 }
 
+.slide-in {
+  right: 10em;
+  -webkit-animation: slide-in 1s forwards;
+  animation: slide-in 1s forwards;
+}
+@-webkit-keyframes slide-in {
+  100% { right: 0 }
+}
+@keyframes slide-in {
+  100% { right: 0 }
+}
+
+.slide-out {
+  right: 0;
+  -webkit-animation: slide-out 1s forwards;
+  animation: slide-out 1s forwards;
+}
+@-webkit-keyframes slide-out {
+  100% { right: 10em }
+}
+@keyframes slide-out {
+  100% { right: 10em }
+}

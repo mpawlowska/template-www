@@ -30,7 +30,7 @@ export default class App extends React.Component {
         return (
             <div>
                 <Header onMenuToggle={this.handleMenuToggle}/>
-                <Listing />
+                <Listing menuState={menuClassName} />
                 <Menu className={menuClassName} />
             </div>
         )

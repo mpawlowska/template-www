@@ -15,26 +15,25 @@
 
 .hide {
   right: 0;
-  -webkit-animation: slide-out 1s forwards;
-  animation: slide-out 1s forwards;
+  -webkit-animation: hide 1s forwards;
+  animation: hide 1s forwards;
 }
-@-webkit-keyframes slide-out {
+@-webkit-keyframes hide {
   100% { right: -10em }
 }
-@keyframes slide-out {
+@keyframes hide {
   100% { right: -10em }
 }
-
 
 .show {
   right: -10em;
-  -webkit-animation: slide-in 1s forwards;
-  animation: slide-in 1s forwards;
+  -webkit-animation: show 1s forwards;
+  animation: show 1s forwards;
 }
-@-webkit-keyframes slide-in {
+@-webkit-keyframes show {
   100% { right: 0 }
 }
-@keyframes slide-in {
+@keyframes show {
   100% { right: 0 }
 }
 

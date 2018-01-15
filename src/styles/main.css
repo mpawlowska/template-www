@@ -65,7 +65,8 @@ ul {
   background-color: antiquewhite;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  position: relative; }
 
 .list__card {
   border: 1px solid blue;
@@ -73,6 +74,28 @@ ul {
   min-width: 200px;
   min-height: 200px; }
 
+.slide-in {
+  right: 10em;
+  -webkit-animation: slide-in 1s forwards;
+  animation: slide-in 1s forwards; }
+
+@-webkit-keyframes slide-in {
+  100% {
+    right: 0; } }
+@keyframes slide-in {
+  100% {
+    right: 0; } }
+.slide-out {
+  right: 0;
+  -webkit-animation: slide-out 1s forwards;
+  animation: slide-out 1s forwards; }
+
+@-webkit-keyframes slide-out {
+  100% {
+    right: 10em; } }
+@keyframes slide-out {
+  100% {
+    right: 10em; } }
 .nav {
   display: flex;
   align-items: center;
@@ -88,24 +111,24 @@ ul {
 
 .hide {
   right: 0;
-  -webkit-animation: slide-out 1s forwards;
-  animation: slide-out 1s forwards; }
+  -webkit-animation: hide 1s forwards;
+  animation: hide 1s forwards; }
 
-@-webkit-keyframes slide-out {
+@-webkit-keyframes hide {
   100% {
     right: -10em; } }
-@keyframes slide-out {
+@keyframes hide {
   100% {
     right: -10em; } }
 .show {
   right: -10em;
-  -webkit-animation: slide-in 1s forwards;
-  animation: slide-in 1s forwards; }
+  -webkit-animation: show 1s forwards;
+  animation: show 1s forwards; }
 
-@-webkit-keyframes slide-in {
+@-webkit-keyframes show {
   100% {
     right: 0; } }
-@keyframes slide-in {
+@keyframes show {
   100% {
     right: 0; } }
 .nav__box {
