@@ -23,27 +23,27 @@ export default class Listing extends React.Component {
         console.log('klasa', className);
 
         return (
-            <main className="wrapper">
-                <div className={className}>
-                    <div className="list__card">
-                    </div>
-                    <div className="list__card">
-                    </div>
-                    <div className="list__card">
-                    </div>
-                    <div className="list__card">
-                    </div>
-                    <div className="list__card">
-                    </div>
-                    <div className="list__card">
-                    </div>
-                    <div className="list__card">
-                    </div>
-                    <div className="list__card">
-                    </div>
-                    <div className="list__card">
-                    </div>
+            <main className={className}>
+
+                <div className="list__card">
                 </div>
+                <div className="list__card">
+                </div>
+                <div className="list__card">
+                </div>
+                <div className="list__card">
+                </div>
+                <div className="list__card">
+                </div>
+                <div className="list__card">
+                </div>
+                <div className="list__card">
+                </div>
+                <div className="list__card">
+                </div>
+                <div className="list__card">
+                </div>
+
             </main>
         )
     }

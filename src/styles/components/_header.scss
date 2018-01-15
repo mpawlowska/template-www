@@ -1,11 +1,7 @@
-.header {
-  background-color: darkgrey;
-}
-
 .header__main {
-  background-color: #ed145b;
+  background-color: darkgrey;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   position: fixed;
   top: 0;
@@ -13,14 +9,30 @@
   right: 0;
   height: 40px;
   padding: 0 0.5em;
+  z-index: 900;
 }
 
-.header_sub {
+
+.header__searchBtn {
+  margin-right: auto;
+  @include media (sm) {
+    display: none;
+  }
+}
+
+.header__menuBtn {
+  margin-left: auto;
+  @include media (sm) {
+    display: none;
+  }
+}
+
+.header__sub {
   background-color: aqua;
-  text-align: center;
   display: none;
-  @include media(sm) {
+  @include media(lg) {
     display: block;
     height: 30px;
   }
 }
+

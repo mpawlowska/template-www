@@ -4,6 +4,9 @@
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
+  @include media(sm) {
+    width: 80%;
+  }
 }
 
 .list__card {
@@ -13,6 +16,7 @@
   min-height: 200px;
 }
 
+// only for mobile
 .slide-in {
   right: 10em;
   -webkit-animation: slide-in 1s forwards;

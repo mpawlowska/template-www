@@ -16,8 +16,9 @@ ul {
   max-width: 100%;
   margin: 0 auto;
   padding: 0 0.5em;
-
   @include media(sm) {
     max-width: 90%;
+    display: flex;
+    background-color: #ed145b;
   }
 }

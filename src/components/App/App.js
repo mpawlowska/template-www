@@ -1,10 +1,12 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import "normalize.css";
+import { breakpoints } from '../utils_responsive/breakpoints';
 import Header from '../Header/Header';
 import Listing from '../Listing/Listing';
 import Menu from '../Menu/Menu';
 import '../../styles/main.scss';
+import MediaQuery from 'react-responsive';
 
 
 export default class App extends React.Component {
@@ -30,8 +32,30 @@ export default class App extends React.Component {
         return (
             <div>
                 <Header onMenuToggle={this.handleMenuToggle}/>
-                <Listing menuState={menuClassName} />
-                <Menu className={menuClassName} />
+
+                <MediaQuery maxWidth={breakpoints.xs}>
+                    <Listing menuState={menuClassName} />
+                    <Menu className={menuClassName} />
+                </MediaQuery>
+
+                <MediaQuery minWidth={breakpoints.sm_min} maxWidth={breakpoints.sm_max}>
+                    <div className = "wrapper">
+                        <Listing />
+                        <Menu />
+                    </div>
+                </MediaQuery>
+
+                <MediaQuery minWidth={breakpoints.md_min} maxWidth={breakpoints.md_max} >
+                        <div>Tablet & Desktop or only Desktop?</div>
+                </MediaQuery>
+
+                <MediaQuery minWidth={breakpoints.lg} >
+                    <div>Tablet & Desktop or only Desktop?</div>
+                </MediaQuery>
+
+
+
+
             </div>
         )
     }

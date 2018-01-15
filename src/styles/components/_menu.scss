@@ -1,14 +1,17 @@
 .nav {
   display: flex;
-  align-items: center;
-  height: 15em;
+  align-items: flex-start;
+  height: 100%;
   width: 10em;
-  top: 40px;
-  background-color: #333333;
   opacity: 0.8;
   position: fixed;
+  @include media(sm) {
+    position: static;
+    width: 20%
+  }
 }
 
+// only for mobile view
 .hidden {
   display: none;
 }
@@ -37,14 +40,15 @@
   100% { right: 0 }
 }
 
+//
 
 .nav__box {
   background-color: blue;
   height: 80%;
-  width: 100%;
+  //width: 100%;
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  position: fixed;
 }
 
 .nav__list {

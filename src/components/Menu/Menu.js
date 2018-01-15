@@ -14,8 +14,12 @@ export default class Menu extends React.Component {
             <div className={`${className} nav`}>
                 <nav className="nav__box">
                     <ul className="nav__list">
-                        <li className="nav__item">Link one</li>
-                        <li className="nav__item">Link two</li>
+                        <li className="nav__item">
+                            <button>Link one</button>
+                        </li>
+                        <li className="nav__item">
+                            <button>Link two</button>
+                        </li>
                     </ul>
                 </nav>
             </div>

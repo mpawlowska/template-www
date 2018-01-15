@@ -12,16 +12,16 @@ export default class Header extends React.Component {
             <header className="header">
                 <div className="wrapper">
                     <div className="header__main">
-                        <button className="header__search">Search</button>
-                        <h1>Tytuł</h1>
+                        <button className="header__searchBtn">Search</button>
+                        <h1 className="header__title">Tytuł</h1>
                         <button
-                            className="header__menuB"
+                            className="header__menuBtn"
                             onClick={ () => this.props.onMenuToggle() }
                         >
                             Menu
                         </button>
                     </div>
-                    <div className="header_sub">
+                    <div className="header__sub">
                         <h3>Podtytuł</h3>
                     </div>
                 </div>
