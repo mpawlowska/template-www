@@ -1,7 +1,10 @@
 body {
   font-family: $base-font-family;
-  margin-top: 40px; // dla fixed header
+  margin-top: $base-header-height; // dla fixed header
   background-color: $base-bkg-color;
+  @include media(xl) {
+    margin-top: $xl-header-height;
+  }
 }
 
 img {

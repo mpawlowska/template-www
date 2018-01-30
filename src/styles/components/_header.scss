@@ -5,14 +5,13 @@
   top: 0;
   left: 0;
   right: 0;
-  height: 40px;
+  height: $base-header-height;
   @include media (xl) {
-   height: 100px;
+   height: $xl-header-height;
   }
 }
 
 .header__main {
-  padding: 0 1em;
   display: grid;
   grid-template-columns: auto 1fr auto;
   justify-items: center;

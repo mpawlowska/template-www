@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
+import ListItem from './ListItem';
 
 export default class Listing extends React.Component {
     constructor(props) {
@@ -24,26 +25,18 @@ export default class Listing extends React.Component {
 
         return (
             <main className={className}>
-
-                <div className="list__card">
-                </div>
-                <div className="list__card">
-                </div>
-                <div className="list__card">
-                </div>
-                <div className="list__card">
-                </div>
-                <div className="list__card">
-                </div>
-                <div className="list__card">
-                </div>
-                <div className="list__card">
-                </div>
-                <div className="list__card">
-                </div>
-                <div className="list__card">
-                </div>
-
+                <ListItem />
+                <ListItem />
+                <ListItem />
+                <ListItem />
+                <ListItem />
+                <ListItem />
+                <ListItem />
+                <ListItem />
+                <ListItem />
+                <ListItem />
+                <ListItem />
+                <ListItem />
             </main>
         )
     }

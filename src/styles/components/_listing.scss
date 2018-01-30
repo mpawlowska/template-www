@@ -2,17 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  position: relative;
+  position: relative; // for sliding in and out
   @include media(md) {
     width: 80%;
   }
-}
-
-.list__card {
-  border: 1px solid blue;
-  margin: 1em;
-  min-width: 200px;
-  min-height: 200px;
 }
 
 // only for mobile
