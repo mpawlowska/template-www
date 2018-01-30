@@ -8,6 +8,7 @@ $border: 1px dotted red;
 $base-bkg-color: #f4f4f4;
 $header-bkg-color: #e2e2e2;
 $black: #1c1c1c;
+$grey: #e7e7e7;
 
 // headings:
 %heading {
@@ -18,20 +19,20 @@ $black: #1c1c1c;
 
 // buttons:
 %button {
-  background-color: $base-bkg-color;
-  border-radius: 5px;
-  border-color: $black;
+  color: $black;
   font-family: $base-font-family;
+  background-color: $base-bkg-color;
+  text-align: center;
+  border-radius: 5px;
+  border: 0.5px solid $grey;
   font-size: 1em;
   padding: 0.2em 1em;
-}
-
-// focus:
-%focus {
-  outline: none;
-  &:focus {
-    border: 2px solid #ed145b;
-  }
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  cursor: pointer;
+    &:hover {
+      background-color: $grey;
+    }
 }
 
 
