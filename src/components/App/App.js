@@ -33,24 +33,24 @@ export default class App extends React.Component {
             <div>
                 <Header onMenuToggle={this.handleMenuToggle}/>
 
-                <MediaQuery maxWidth={breakpoints.xs}>
+                <MediaQuery maxWidth={breakpoints.sm}>
                     <Listing menuState={menuClassName} />
                     <Menu className={menuClassName} />
                 </MediaQuery>
 
-                <MediaQuery minWidth={breakpoints.sm_min} maxWidth={breakpoints.sm_max}>
+                <MediaQuery minWidth={breakpoints.md_min} maxWidth={breakpoints.md_max}>
                     <div className = "wrapper">
                         <Listing />
                         <Menu />
                     </div>
                 </MediaQuery>
 
-                <MediaQuery minWidth={breakpoints.md_min} maxWidth={breakpoints.md_max} >
-                        <div>Tablet & Desktop or only Desktop?</div>
+                <MediaQuery minWidth={breakpoints.lg_min} maxWidth={breakpoints.lg_max} >
+                    <div>Desktop</div>
                 </MediaQuery>
 
-                <MediaQuery minWidth={breakpoints.lg} >
-                    <div>Tablet & Desktop or only Desktop?</div>
+                <MediaQuery minWidth={breakpoints.xl} >
+                    <div>Large Desktop</div>
                 </MediaQuery>
 
 

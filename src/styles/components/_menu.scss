@@ -5,7 +5,7 @@
   width: 10em;
   opacity: 0.8;
   position: fixed;
-  @include media(sm) {
+  @include media(md) {
     position: static;
     width: 20%
   }

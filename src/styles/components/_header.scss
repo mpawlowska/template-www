@@ -15,14 +15,14 @@
 
 .header__searchBtn {
   margin-right: auto;
-  @include media (sm) {
+  @include media (md) {
     display: none;
   }
 }
 
 .header__menuBtn {
   margin-left: auto;
-  @include media (sm) {
+  @include media (md) {
     display: none;
   }
 }
@@ -30,7 +30,7 @@
 .header__sub {
   background-color: aqua;
   display: none;
-  @include media(lg) {
+  @include media(xl) {
     display: block;
     height: 30px;
   }

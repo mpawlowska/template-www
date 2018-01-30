@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
-  @include media(sm) {
+  @include media(md) {
     width: 80%;
   }
 }
