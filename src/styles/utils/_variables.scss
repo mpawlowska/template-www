@@ -1,8 +1,30 @@
 // fonts:
-$base-font-family: 'Merriweather', serif;
+$base-font-family: 'Raleway', sans-serif;
 
 // layout:
 $border: 1px dotted red;
+
+// color:
+$base-bkg-color: #f4f4f4;
+$header-bkg-color: #e2e2e2;
+$black: #1c1c1c;
+
+// headings:
+%heading {
+  margin: 0;
+  color: $black;
+  font-weight: 500;
+}
+
+// buttons:
+%button {
+  background-color: $base-bkg-color;
+  border-radius: 5px;
+  border-color: $black;
+  font-family: $base-font-family;
+  font-size: 1em;
+  padding: 0.2em 1em;
+}
 
 // focus:
 %focus {

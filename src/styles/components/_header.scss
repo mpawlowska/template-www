@@ -1,38 +1,61 @@
-.header__main {
-  background-color: darkgrey;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header {
+  background-color: $base-bkg-color;
+  z-index: 900;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   height: 40px;
-  padding: 0 0.5em;
-  z-index: 900;
+  @include media (xl) {
+   height: 100px;
+  }
 }
 
+.header__main {
+  padding: 0 1em;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  justify-items: center;
+  align-items: center;
+  height: 100%;
+  @include media (md) {
+    grid-template-columns: 1fr;
+  }
+  @include media (xl) {
+    grid-template-rows: 1fr 1fr;
+    align-content: center;
+  }
+}
 
 .header__searchBtn {
-  margin-right: auto;
+  @extend %button;
   @include media (md) {
     display: none;
   }
 }
 
 .header__menuBtn {
-  margin-left: auto;
+  @extend %button;
   @include media (md) {
     display: none;
   }
 }
 
-.header__sub {
-  background-color: aqua;
+.header__title {
+  @extend %heading;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.header__subtitle {
   display: none;
+  @extend %heading;
   @include media(xl) {
     display: block;
-    height: 30px;
+    font-style: italic;
   }
 }
+
+
+
 

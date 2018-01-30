@@ -1,3 +1,16 @@
+.header__title, .header__subtitle {
+  margin: 0;
+  color: #1c1c1c;
+  font-weight: 500; }
+
+.header__searchBtn, .header__menuBtn {
+  background-color: #f4f4f4;
+  border-radius: 5px;
+  border-color: #1c1c1c;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  padding: 0.2em 1em; }
+
 /*
 aside.primary {
   float: right;
@@ -19,8 +32,9 @@ aside.primary {
 }
  */
 body {
-  font-family: "Merriweather", serif;
-  margin-top: 40px; }
+  font-family: "Raleway", sans-serif;
+  margin-top: 40px;
+  background-color: #f4f4f4; }
 
 img {
   max-width: 100%; }
@@ -36,44 +50,55 @@ ul {
   @media screen and (min-width: 767px) {
     .wrapper {
       max-width: 90%;
-      display: flex;
-      background-color: #ed145b; } }
+      display: flex; } }
 
-.header__main {
-  background-color: darkgrey;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.header {
+  background-color: #f4f4f4;
+  z-index: 900;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 40px;
-  padding: 0 0.5em;
-  z-index: 900; }
+  height: 40px; }
+  @media screen and (min-width: 1200px) {
+    .header {
+      height: 100px; } }
 
-.header__searchBtn {
-  margin-right: auto; }
+.header__main {
+  padding: 0 1em;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  justify-items: center;
+  align-items: center;
+  height: 100%; }
   @media screen and (min-width: 767px) {
-    .header__searchBtn {
-      display: none; } }
+    .header__main {
+      grid-template-columns: 1fr; } }
+  @media screen and (min-width: 1200px) {
+    .header__main {
+      grid-template-rows: 1fr 1fr;
+      align-content: center; } }
 
-.header__menuBtn {
-  margin-left: auto; }
-  @media screen and (min-width: 767px) {
-    .header__menuBtn {
-      display: none; } }
+@media screen and (min-width: 767px) {
+  .header__searchBtn {
+    display: none; } }
 
-.header__sub {
-  background-color: aqua;
+@media screen and (min-width: 767px) {
+  .header__menuBtn {
+    display: none; } }
+
+.header__title {
+  text-transform: uppercase;
+  letter-spacing: 0.2em; }
+
+.header__subtitle {
   display: none; }
   @media screen and (min-width: 1200px) {
-    .header__sub {
+    .header__subtitle {
       display: block;
-      height: 30px; } }
+      font-style: italic; } }
 
 .list {
-  background-color: antiquewhite;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

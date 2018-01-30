@@ -46,11 +46,11 @@ export default class App extends React.Component {
                 </MediaQuery>
 
                 <MediaQuery minWidth={breakpoints.lg_min} maxWidth={breakpoints.lg_max} >
-                    <div>Desktop</div>
+                    <div></div>
                 </MediaQuery>
 
                 <MediaQuery minWidth={breakpoints.xl} >
-                    <div>Large Desktop</div>
+                    <div></div>
                 </MediaQuery>
 
 
