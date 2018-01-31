@@ -44,21 +44,24 @@
 
 /* only for mobile view - nav sliding in and out */
 
-.nav__box--hidden,
-.nav__overlay--hidden {
+.nav__box--hidden {
   display: none;
+}
+
+.nav__overlay--hidden {
+  opacity: 0;
 }
 
 .nav__overlay--hide {
   @extend %nav__overlay;
   opacity: 0;
-  transition: opacity 0.1s linear;
+  transition: opacity 0.1s ease-in;
 }
 
 .nav__overlay--show {
   @extend %nav__overlay;
   opacity:0.7;
-  transition: opacity 0.8s linear;
+  transition: opacity 0.8s ease-in;
 }
 
 // poniżej z slide in and out dla overlay
