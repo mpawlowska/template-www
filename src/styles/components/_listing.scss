@@ -1,7 +1,4 @@
-.list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.main {
   position: relative; // for sliding in and out
   @include media(md) {
     width: 80%;
@@ -9,7 +6,7 @@
 }
 
 // only for mobile
-.slide-in {
+.main--slide-in {
   left: 10em;
   -webkit-animation: slide-in 0.8s forwards;
   animation: slide-in 0.8s forwards;
@@ -21,7 +18,7 @@
   100% { left: 0 }
 }
 
-.slide-out {
+.main--slide-out {
   left: 0;
   -webkit-animation: slide-out 0.8s forwards;
   animation: slide-out 0.8s forwards;
@@ -32,3 +29,10 @@
 @keyframes slide-out {
   100% { left: 10em }
 }
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+

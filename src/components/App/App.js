@@ -43,7 +43,7 @@ export default class App extends React.Component {
                 <MediaQuery minWidth={breakpoints.md_min} maxWidth={breakpoints.md_max}>
                     <div className = "wrapper">
                         <Listing />
-                        <Menu />
+                        <Menu className="aside"/>
                     </div>
                 </MediaQuery>
 

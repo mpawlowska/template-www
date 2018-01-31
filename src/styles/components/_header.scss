@@ -6,6 +6,7 @@
   left: 0;
   right: 0;
   height: $base-header-height;
+  border-bottom: 2px solid white;
   @include media (xl) {
    height: $xl-header-height;
   }

@@ -13,30 +13,42 @@ export default class Listing extends React.Component {
 
     componentWillReceiveProps(nextProps) {
         const {menuState} = nextProps;
-        menuState === 'show' ? this.setState({listClass: 'slide-out'}) : this.setState({listClass: 'slide-in'})
+        menuState === 'show' ? this.setState({listClass: 'main--slide-out'}) : this.setState({listClass: 'main--slide-in'})
     }
 
     render() {
         let className;
         const {listClass} = this.state;
-        console.log(listClass);
-        { listClass ? className = `${listClass} list` : className = 'list'}
-        console.log('klasa', className);
+        { listClass ? className = `${listClass} main` : className = 'main'}
 
         return (
             <main className={className}>
-                <ListItem />
-                <ListItem />
-                <ListItem />
-                <ListItem />
-                <ListItem />
-                <ListItem />
-                <ListItem />
-                <ListItem />
-                <ListItem />
-                <ListItem />
-                <ListItem />
-                <ListItem />
+                <ul className="list">
+                    <li className="item">
+                        <ListItem />
+                    </li>
+                    <li className="item">
+                        <ListItem />
+                    </li>
+                    <li className="item">
+                        <ListItem />
+                    </li>
+                    <li className="item">
+                        <ListItem />
+                    </li>
+                    <li className="item">
+                        <ListItem />
+                    </li>
+                    <li className="item">
+                        <ListItem />
+                    </li>
+                    <li className="item">
+                        <ListItem />
+                    </li>
+                    <li className="item">
+                        <ListItem />
+                    </li>
+                </ul>
             </main>
         )
     }

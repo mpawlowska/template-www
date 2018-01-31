@@ -8,12 +8,12 @@ export default class ListItem extends React.Component {
 
     render() {
         return (
-            <div className="listItem">
-                <div className="listItem__imgContainer">
+            <div className="item__container">
+                <div className="item__imgContainer">
                     <img src="https://www.menshealth.com/sites/menshealth.com/files/beer-main_0.jpg" className="listItem__img" alt="Beer image"/>
                 </div>
-                <h3 className="listItem__name">Nazwa</h3>
-                <p className="listItem__tagline">Tagline</p>
+                <h3 className="item__name">Nazwa</h3>
+                <p className="item__tagline">Tagline</p>
             </div>
         )
     }

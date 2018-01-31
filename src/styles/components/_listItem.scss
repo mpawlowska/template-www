@@ -1,6 +1,6 @@
-.listItem {
+.item__container {
   background-color: #fff;
-  max-width: 280px;
+  width: 250px;
   margin: 1em;
   display: flex;
   flex-direction: column;
@@ -12,18 +12,18 @@
   box-shadow: 3px 3px 22px 1px rgba(0,0,0,0.5);
   &:hover {
     transform: scale(1.05);
-    .listItem__name::after {
+    .item__name::after {
       width: 100%
     }
   }
 }
 
-.listItem__name {
+.item__name {
   &::after {
     @extend %btn-underline
   }
 }
 
-.listItem__tagline {
+.item__tagline {
   margin-top: 0;
 }

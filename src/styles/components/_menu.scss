@@ -9,7 +9,7 @@
   //background-color: rgba(0,0,0,0.6);
 }
 
-.nav__box {
+%nav__box {
   background-color: $grey;
   height: 100%;
   width: $nav-width;
@@ -18,14 +18,22 @@
   text-align: center;
   padding-top: 1em;
   @include media(md) {
-    position: static;
-    width: 20%
+    position: fixed;
+    background-color: inherit;
+    border-left: 1px solid white;
   }
 }
 
+.nav__container {
+  width: 15%;
+
+}
 .nav__item {
   padding: 1em;
   border-bottom: 1px solid white;
+  @include media(md) {
+    padding: 1.5em;
+  }
 }
 
 .nav__btn {
@@ -40,9 +48,13 @@
       width: 100%;
     }
   }
+  @include media(md) {
+    background-color: inherit;
+    border: none
+  }
 }
 
-/* only for mobile view - nav sliding in and out */
+/* ----- only for mobile view - nav sliding in and out ------ */
 
 .nav__box--hidden {
   display: none;
@@ -63,6 +75,47 @@
   opacity:0.7;
   transition: opacity 0.8s ease-in;
 }
+
+
+.nav__box--hide {
+  @extend %nav__box;
+  left: 0;
+  -webkit-animation: hide-box 0.5s forwards;
+  animation: hide-box 0.5s forwards;
+}
+@-webkit-keyframes hide-box {
+  100% { left: -10em }
+}
+@keyframes hide-box {
+  100% { left: -10em }
+}
+
+.nav__box--show {
+  @extend %nav__box;
+  left: -10em;
+  -webkit-animation: show-box 0.5s forwards;
+  animation: show-box 0.5s forwards;
+}
+@-webkit-keyframes show-box {
+  100% { left: 0 }
+}
+@keyframes show-box {
+  100% { left: 0}
+}
+
+/* ----- END ------ */
+
+/* only for tablet view - nav aside */
+
+.nav__overlay--aside {
+  display: none;
+}
+
+.nav__box--aside {
+  @extend %nav__box;
+}
+
+
 
 // poniżej z slide in and out dla overlay
 //.nav__overlay--hide {
@@ -90,37 +143,6 @@
 //@keyframes show-overlay {
 //  100% { left: 0}
 //}
-
-/* for box */
-.nav__box--hide {
-  left: 0;
-  -webkit-animation: hide-box 0.5s forwards;
-  animation: hide-box 0.5s forwards;
-}
-@-webkit-keyframes hide-box {
-  100% { left: -10em }
-}
-@keyframes hide-box {
-  100% { left: -10em }
-}
-
-.nav__box--show {
-  left: -10em;
-  -webkit-animation: show-box 0.5s forwards;
-  animation: show-box 0.5s forwards;
-}
-@-webkit-keyframes show-box {
-  100% { left: 0 }
-}
-@keyframes show-box {
-  100% { left: 0}
-}
-
-/* END */
-
-
-
-
 
 
 
