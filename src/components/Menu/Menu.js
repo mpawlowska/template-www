@@ -11,7 +11,8 @@ export default class Menu extends React.Component {
         const {className} = this.props;
 
         return (
-            <div className={`nav__overlay--${className}`}>
+            <div>
+                <div className={`nav__overlay--${className}`}></div>
                 <nav className={`nav__box nav__box--${className}`}>
                     <ul>
                         <li className="nav__item">

@@ -155,15 +155,16 @@ ul {
   z-index: 400;
   position: fixed;
   top: 70px;
+  left: 10em;
   width: 100%;
   height: 100%;
-  background-color: #1c1c1c;
-  background-color: rgba(0, 0, 0, 0.6); }
+  background-color: #1c1c1c; }
 
 .nav__box {
   background-color: #e7e7e7;
   height: 100%;
   width: 10em;
+  position: fixed;
   z-index: 500;
   text-align: center;
   padding-top: 1em; }
@@ -188,27 +189,13 @@ ul {
   display: none; }
 
 .nav__overlay--hide {
-  left: 0;
-  -webkit-animation: hide-overlay 0.8s forwards;
-  animation: hide-overlay 0.8s forwards; }
+  opacity: 0;
+  transition: opacity 0.1s linear; }
 
-@-webkit-keyframes hide-overlay {
-  100% {
-    left: -100%; } }
-@keyframes hide-overlay {
-  100% {
-    left: -100%; } }
 .nav__overlay--show {
-  left: -100%;
-  -webkit-animation: show-overlay 0.8s forwards;
-  animation: show-overlay 0.8s forwards; }
+  opacity: 0.7;
+  transition: opacity 0.8s linear; }
 
-@-webkit-keyframes show-overlay {
-  100% {
-    left: 0; } }
-@keyframes show-overlay {
-  100% {
-    left: 0; } }
 /* for box */
 .nav__box--hide {
   left: 0;

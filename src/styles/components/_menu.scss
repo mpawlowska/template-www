@@ -2,17 +2,18 @@
   z-index: 400;
   position: fixed;
   top: $base-header-height;
+  left: $nav-width;
   width: 100%;
   height: 100%;
   background-color: $black;
-  background-color: rgba(0,0,0,0.6);
+  //background-color: rgba(0,0,0,0.6);
 }
 
 .nav__box {
   background-color: $grey;
   height: 100%;
-  width: 10em;
-  //position: fixed;
+  width: $nav-width;
+  position: fixed;
   z-index: 500;
   text-align: center;
   padding-top: 1em;
@@ -50,29 +51,42 @@
 
 .nav__overlay--hide {
   @extend %nav__overlay;
-  left: 0;
-  -webkit-animation: hide-overlay 0.8s forwards;
-  animation: hide-overlay 0.8s forwards;
-}
-@-webkit-keyframes hide-overlay {
-  100% { left: -100% }
-}
-@keyframes hide-overlay {
-  100% { left: -100% }
+  opacity: 0;
+  transition: opacity 0.1s linear;
 }
 
 .nav__overlay--show {
   @extend %nav__overlay;
-  left: -100%;
-  -webkit-animation: show-overlay 0.8s forwards;
-  animation: show-overlay 0.8s forwards;
+  opacity:0.7;
+  transition: opacity 0.8s linear;
 }
-@-webkit-keyframes show-overlay {
-  100% { left: 0 }
-}
-@keyframes show-overlay {
-  100% { left: 0}
-}
+
+// poniżej z slide in and out dla overlay
+//.nav__overlay--hide {
+//  @extend %nav__overlay;
+//  left: 0;
+//  -webkit-animation: hide-overlay 0.8s forwards;
+//  animation: hide-overlay 0.8s forwards;
+//}
+//@-webkit-keyframes hide-overlay {
+//  100% { left: -100% }
+//}
+//@keyframes hide-overlay {
+//  100% { left: -100% }
+//}
+//
+//.nav__overlay--show {
+//  @extend %nav__overlay;
+//  left: -100%;
+//  -webkit-animation: show-overlay 0.8s forwards;
+//  animation: show-overlay 0.8s forwards;
+//}
+//@-webkit-keyframes show-overlay {
+//  100% { left: 0 }
+//}
+//@keyframes show-overlay {
+//  100% { left: 0}
+//}
 
 /* for box */
 .nav__box--hide {
