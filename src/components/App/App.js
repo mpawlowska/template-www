@@ -34,8 +34,10 @@ export default class App extends React.Component {
                 <Header onMenuToggle={this.handleMenuToggle}/>
 
                 <MediaQuery maxWidth={breakpoints.sm}>
-                    <Listing menuState={menuClassName} />
-                    <Menu className={menuClassName} />
+                    <div className="wrapper">
+                        <Menu className={menuClassName} />
+                        <Listing menuState={menuClassName} />
+                    </div>
                 </MediaQuery>
 
                 <MediaQuery minWidth={breakpoints.md_min} maxWidth={breakpoints.md_max}>

@@ -1,64 +1,110 @@
-.nav {
-  display: flex;
-  align-items: flex-start;
+%nav__overlay {
+  z-index: 400;
+  position: fixed;
+  top: $base-header-height;
+  width: 100%;
+  height: 100%;
+  background-color: $black;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.nav__box {
+  background-color: $grey;
   height: 100%;
   width: 10em;
-  opacity: 0.8;
-  position: fixed;
+  //position: fixed;
+  z-index: 500;
+  text-align: center;
+  padding-top: 1em;
   @include media(md) {
     position: static;
     width: 20%
   }
 }
 
-// only for mobile view
-.hidden {
+.nav__item {
+  padding: 1em;
+  border-bottom: 1px solid white;
+}
+
+.nav__btn {
+  @extend %button;
+  font-size: 1em;
+  background-color: $grey;
+  &::after {
+    @extend %btn-underline;
+  }
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+/* only for mobile view - nav sliding in and out */
+
+.nav__box--hidden,
+.nav__overlay--hidden {
   display: none;
 }
 
-.hide {
-  right: 0;
-  -webkit-animation: hide 1s forwards;
-  animation: hide 1s forwards;
+.nav__overlay--hide {
+  @extend %nav__overlay;
+  left: 0;
+  -webkit-animation: hide-overlay 0.8s forwards;
+  animation: hide-overlay 0.8s forwards;
 }
-@-webkit-keyframes hide {
-  100% { right: -10em }
+@-webkit-keyframes hide-overlay {
+  100% { left: -100% }
 }
-@keyframes hide {
-  100% { right: -10em }
-}
-
-.show {
-  right: -10em;
-  -webkit-animation: show 1s forwards;
-  animation: show 1s forwards;
-}
-@-webkit-keyframes show {
-  100% { right: 0 }
-}
-@keyframes show {
-  100% { right: 0 }
+@keyframes hide-overlay {
+  100% { left: -100% }
 }
 
-//
-
-.nav__box {
-  background-color: blue;
-  height: 80%;
-  //width: 100%;
-  display: flex;
-  align-items: flex-start;
-  position: fixed;
+.nav__overlay--show {
+  @extend %nav__overlay;
+  left: -100%;
+  -webkit-animation: show-overlay 0.8s forwards;
+  animation: show-overlay 0.8s forwards;
+}
+@-webkit-keyframes show-overlay {
+  100% { left: 0 }
+}
+@keyframes show-overlay {
+  100% { left: 0}
 }
 
-.nav__list {
-  background-color: white;
-  text-align: center;
+/* for box */
+.nav__box--hide {
+  left: 0;
+  -webkit-animation: hide-box 0.5s forwards;
+  animation: hide-box 0.5s forwards;
+}
+@-webkit-keyframes hide-box {
+  100% { left: -10em }
+}
+@keyframes hide-box {
+  100% { left: -10em }
 }
 
-.nav__item {
-  padding: 1em;
+.nav__box--show {
+  left: -10em;
+  -webkit-animation: show-box 0.5s forwards;
+  animation: show-box 0.5s forwards;
 }
+@-webkit-keyframes show-box {
+  100% { left: 0 }
+}
+@keyframes show-box {
+  100% { left: 0}
+}
+
+/* END */
+
+
+
+
+
 
 
 

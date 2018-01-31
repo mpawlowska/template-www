@@ -11,14 +11,14 @@ export default class Menu extends React.Component {
         const {className} = this.props;
 
         return (
-            <div className={`${className} nav`}>
-                <nav className="nav__box">
-                    <ul className="nav__list">
+            <div className={`nav__overlay--${className}`}>
+                <nav className={`nav__box nav__box--${className}`}>
+                    <ul>
                         <li className="nav__item">
-                            <button>Link one</button>
+                            <button className="nav__btn">Log in /<br/>Register</button>
                         </li>
                         <li className="nav__item">
-                            <button>Link two</button>
+                            <button className="nav__btn">Favorites</button>
                         </li>
                     </ul>
                 </nav>

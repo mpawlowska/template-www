@@ -12,6 +12,7 @@
 }
 
 .header__main {
+  padding: 0 0.5em;
   display: grid;
   grid-template-columns: auto 1fr auto;
   justify-items: center;
@@ -28,6 +29,9 @@
 
 .header__searchBtn {
   @extend %button;
+  &:hover {
+    background-color: $grey;
+  }
   @include media (md) {
     display: none;
   }
@@ -35,6 +39,9 @@
 
 .header__menuBtn {
   @extend %button;
+  &:hover {
+    background-color: $grey;
+  }
   @include media (md) {
     display: none;
   }
